@@ -1,0 +1,234 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+.navbar{
+    &-brand{
+        width: 40px;
+        @media (min-width:992px) {
+            width: 60px;
+        }
+    }
+    &-nav{
+        gap: 30px;
+    }
+    &-toggler{
+        color: white;
+        &-icon{
+            color: white;
+        }
+    }
+    .nav-link{
+        color: white;
+        font-size: 18px;
+    }
+}
+
+.about{
+    
+    height: auto;
+    @media (min-width:768px) {
+        height: 128vh;
+        flex-wrap: wrap;
+    }
+    @media (min-width:992px) {
+        height: 80vh;
+    }
+    h2{
+        font-size: 42px;
+        text-align: center;
+    }
+    .container{
+        background-color: #ffe6cc;
+    }
+    .col-md-6{
+        height: 430px;
+        @media (min-width:992px) {
+            height: 470px;
+            
+        }
+        h2{
+            font-size: 36px;
+            text-align: center;
+        }
+    }
+    .img-cont{
+        
+        width: 250px;
+        height: 275px;
+        overflow: hidden;
+        @media (min-width: 1200px) {
+            width: 300px;
+            height: 325px;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        max-width: 260px;
+        text-align: center;
+    }
+    .auto{
+        width: 250px;
+                @media (min-width: 1200px) {
+                    width: 300px;
+                    
+                }
+    }   
+}
+footer{
+    height: 9vh;
+    background-color: #422010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+.modal{
+    .modal-title{
+        font-size: 32px;
+    }
+    .form-control{
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0px;
+        
+        &:focus{
+            outline: none;
+            background-color: #e0e0e0;
+            box-shadow: none;
+        }
+    }
+}
+
+.btn{
+    &-close{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 10;
+        &:focus{
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+.btn-primary{
+    background-color: rgb(190, 102, 42);
+    border: none;
+    &:active{
+        --bs-btn-active-bg:  rgb(218, 149, 104);
+       
+    }
+}
+.btn-primary:hover{
+    background-color: rgb(126, 66, 27);
+}
+
+
+.all{
+    margin-bottom: 90px;
+    .img-cont{
+        height: 250px;
+        width: 500px;
+        overflow: hidden;
+        padding-right: 0;
+        padding-left: 0;
+        @media (min-width: 1200px) {
+            width: 1000px;
+            height: 500px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px){
+            height: 400px;
+            width: 800px;
+        }
+        @media (min-width: 768px) and (max-width: 992px){
+            height: 300px;
+            width: 600px;
+        }
+        @media (max-width: 576px){
+                
+            width: 100%;
+        }
+        .auto{
+            width: 500px;
+            @media (min-width: 1200px) {
+                width: 1000px;
+                
+            }
+            @media (min-width: 992px) and (max-width: 1200px) {
+                width: 800px;
+                
+            }
+            @media (min-width: 768px) and (max-width: 992px){
+                
+                width: 600px;
+            }
+            @media (max-width: 576px){
+                
+                width: 100%;
+            }
+        }
+    }
+    .container{
+        padding-top: 20px;
+        @media (min-width: 1200px) {
+            padding-top: 90px;
+            
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+            padding-top: 70px;
+            
+        }
+        @media (min-width: 768px) and (max-width: 992px){
+            
+            padding-top: 55px;
+        }
+        @media (max-width: 576px){
+            
+            padding-top: 10px;
+        }
+        background-color: #ffe6cc;
+    }
+    .text{
+        max-width: 1000px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+        @media (min-width: 1200px) {
+            padding-right: 0;
+            padding-left: 0;
+            
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+            padding-right: 75px;
+            padding-left: 75px;
+            
+        }
+        @media (min-width: 768px) and (max-width: 992px){
+            
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+        @media (max-width: 576px){
+            
+            
+        }
+        p{
+           
+            @media (min-width: 992px){
+                font-size: 1.2em;
+                
+            }
+        }
+    }
+    
+}

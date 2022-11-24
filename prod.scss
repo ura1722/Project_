@@ -1,0 +1,224 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+.navbar{
+    &-brand{
+        width: 40px;
+        @media (min-width:992px) {
+            width: 60px;
+        }
+    }
+    &-nav{
+        gap: 30px;
+    }
+    &-toggler{
+        color: white;
+        &-icon{
+            color: white;
+        }
+    }
+    .nav-link{
+        color: white;
+        font-size: 18px;
+    }
+}
+header{
+    height: 70vh;
+    background: url('2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-weight: 700;
+        font-size: 54px;
+        color: 	#ffffff;
+        @media (min-width:992px) {
+            font-size: 72px;
+        }
+    }
+    p{
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        
+    }
+    .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .row{
+        
+        text-align: center;
+        
+    }
+}
+.modal{
+    .modal-title{
+        font-size: 32px;
+    }
+    .form-control{
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0px;
+        
+        &:focus{
+            outline: none;
+            background-color: #e0e0e0;
+            box-shadow: none;
+        }
+    }
+}
+.btn{
+    &-close{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 10;
+        &:focus{
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+.btn-primary{
+    background-color: rgb(190, 102, 42);
+    border: none;
+    &:active{
+        --bs-btn-active-bg:  rgb(218, 149, 104);
+       
+    }
+}
+.btn-primary:hover{
+    background-color: rgb(126, 66, 27);
+}
+
+.main{
+    height: auto;
+   
+    @media (min-width:992px) {
+        height: 125vh;
+    }
+    display: flex;
+    align-items: center;
+    .col-md-6{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .prod_cont{
+        height: 470px;
+        width: 350px;
+        background-color:  	#ffe6cc;
+        @media (min-width:1200px) {
+            width: 410px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+
+    }
+    .cont_img{
+        width: 230px;
+        height: 230px;
+        @media (min-width: 1200px) {
+            width: 245px;
+            height: 245px;
+        }
+        
+        .autoimg{
+            width: 230px;
+            @media (min-width: 1200px) {
+                width: 245px;
+                
+            }
+        }
+    }
+}
+.cont_img_{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    @media (min-width: 1200px) {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .autoimg{
+        width: 250px;
+        @media (min-width: 1200px) {
+            width: 280px;
+            
+        }
+    }
+}
+.modal-body{
+    #info{
+        max-width: 350px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-select{
+        box-shadow: none;
+        border-radius: 50px;
+        width: 61px;
+        border: 3px solid grey;
+    }
+    
+    
+}
+.sasss{
+    position: relative;
+    height: 70px;
+    width: 200px;
+    .form-floating{
+        position: absolute;
+        z-index: 10;
+    }
+    .form-control{
+        position: absolute;
+        width: 200px;
+        background-color: transparent;
+        border: 3px solid grey;
+        top: 8px;
+        left: 20px;
+        padding-left: 45px;
+    }
+}
+
+.ps{
+    height: 50vh;
+    background-color: #000;
+    margin-bottom: 90px;
+    background: url('05.jpg');
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    p{
+        @media (min-width: 1200px) {
+            font-size: 1.2em;
+        }
+    }
+}
+
+footer{
+    height: 9vh;
+    background-color: #422010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+    }
+}
